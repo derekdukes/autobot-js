@@ -1,0 +1,11 @@
+{
+    "name": "Decepticon",
+    "description": "",
+    "version": "0.1",
+    "private": true,
+    "dependencies": {
+        "jquery": "",
+        "bootstrap": "",
+        "font-awesome":""
+    }
+}

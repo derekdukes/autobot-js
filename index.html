@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Autobot - The Text Transformer</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/autobot.js"></script>
+  <script src="js/dataflow.js"></script>
+  <style>
+    .logo-column {
+      padding-top: 150px;
+        padding-left:50px;
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-md-offset-2">
+          <h3>Input</h3>
+          <form>
+            <div class="form-group">
+              <textarea class="form-control" rows="6" id="textInput"></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-default" type="button" id="buttonProcess"><i class="fa fa-cog"></i> Transform!</button>
+                <button class="btn btn-default" type="button" id="buttonCopy"><i class="fa fa-clipboard"></i> Roll Out!</button>
+                <button class="btn btn-warning" type="button" id="buttonReset">Reset</button>
+            </div>
+          </form>
+          <h3>Output</h3>
+          <div class="form-group">
+            <textarea class="form-control" rows="6" id="textOutput"></textarea>
+          </div>
+            <div class="alert alert-info hidden" id="alertInfo"><strong>Decepticon Warning!</strong> Some Javadoc links not fixed.</div>
+
+            <div class="panel panel-danger hidden" id="panelWarning">
+                <div class="panel-heading">
+                    <h5 class="panel-title">Skipped Blocks to Check/Update Manually</h5>
+                </div>
+                <div class="panel-body">
+                    <ul id="skippedBlocks"></ul>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="col-md-4">
+          <div class="logo-column">
+              <div class="row">
+                  <h3>Autobot<br/>
+                      <small>The Text Transformer</small></h3>
+              </div>
+              <br/>
+              <div class="row">
+
+                  <img class="img-responsive" src="autobot_logo.png"/>
+              </div>
+
+
+
+
+
+          </div>
+
+
+      </div>
+
+    </div>
+
+
+    </div>
+</body>
+</html>
